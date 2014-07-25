@@ -22,7 +22,7 @@
 #ifndef INCLUDED_FS20_API_H
 #define INCLUDED_FS20_API_H
 
-#include <gruel/attributes.h>
+#include <gnuradio/attributes.h>
 
 #ifdef gnuradio_fs20_EXPORTS
 #  define FS20_API __GR_ATTR_EXPORT

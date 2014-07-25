@@ -22,6 +22,6 @@
 ########################################################################
 install(FILES
     api.h
-    fs20_bit_decoder_bb.h
-    fs20_frame_decoder_b.h DESTINATION include/fs20
+    bit_decoder_bb.h
+    frame_decoder_b.h DESTINATION include/fs20
 )

@@ -17,6 +17,6 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 install(FILES
-    fs20_bit_decoder_bb.xml
-    fs20_frame_decoder_b.xml DESTINATION share/gnuradio/grc/blocks
+    bit_decoder_bb.xml
+    frame_decoder_b.xml DESTINATION share/gnuradio/grc/blocks
 )

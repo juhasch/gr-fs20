@@ -25,9 +25,9 @@ include(GrPlatform) #define LIB_SUFFIX
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 add_library(gnuradio-fs20 SHARED
-    fs20_bit_decoder_bb_impl.cc
-    fs20_frame_decoder_b_impl.cc )
-target_link_libraries(gnuradio-fs20 ${Boost_LIBRARIES} ${GRUEL_LIBRARIES} ${GNURADIO_CORE_LIBRARIES})
+    bit_decoder_bb_impl.cc
+    frame_decoder_b_impl.cc )
+target_link_libraries(gnuradio-fs20 ${Boost_LIBRARIES} ${GNURADIO_RUNTIME_LIBRARIES})
 set_target_properties(gnuradio-fs20 PROPERTIES DEFINE_SYMBOL "gnuradio_fs20_EXPORTS")
 
 ########################################################################
@@ -55,7 +55,7 @@ add_executable(test-fs20 ${test_fs20_sources})
 
 target_link_libraries(
   test-fs20
-  ${GNURADIO_CORE_LIBRARIES}
+  ${GNURADIO_RUNTIME_LIBRARIES}
   ${Boost_LIBRARIES}
   ${CPPUNIT_LIBRARIES}
   gnuradio-fs20
